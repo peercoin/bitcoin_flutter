@@ -103,9 +103,9 @@ class TransactionBuilder {
     return _tx.addOutput(scriptPubKey, value);
   }
 
-  //Adding an OP_RETURN output
+  //Adding an OP_RETURN output to the transaction
   int addOutputData(String words) {
-    var scriptPubKey = P2DATA(words: words, network: this.network).data.output;
+    var scriptPubKey = P2DATA(words: words, network: this.network).output;
     return _tx.addOutput(scriptPubKey, 0);
   }
 

@@ -136,3 +136,5 @@ const OPS = {
 
   'OP_INVALIDOPCODE': 0xff,
 };
+
+const int MAX_OP_RETURN_SIZE = 250;
